@@ -1,0 +1,28 @@
+{
+  "env": {
+    "development": {
+      "plugins": [
+        "transform-decorators-legacy",
+        ["emotion", { "inline": true }]
+      ],
+      "presets": "next/babel"
+    },
+    "production": {
+      "plugins": [
+        "transform-decorators-legacy",
+        ["emotion", { "inline": true }]
+      ],
+      "presets": "next/babel"
+    },
+    "test": {
+      "plugins": [
+        "transform-decorators-legacy",
+        ["emotion", { "inline": true }]
+      ],
+      "presets": [
+        ["env", { "modules": "commonjs" }],
+        "next/babel"
+      ]
+    }
+  }
+}
