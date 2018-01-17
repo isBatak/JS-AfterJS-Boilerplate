@@ -4,12 +4,12 @@
   "description": "nextjs react boilerplate",
   "scripts": {
     "test": "cross-env NODE_ENV=test jest",
-    "dev": "node server",
-    "build": "next build",
-    "start": "cross-env NODE_ENV=production node server.js",
+    "dev": "after start",
+    "build": "after build",
+    "start": "cross-env NODE_ENV=production node build/build/server.js",
     "lint": "eslint --ignore-path .gitignore app config test .storybook",
     "precommit": "lint-staged",
-    "analyze": "cross-env ANALYZE=1 next build",
+    "analyze": "cross-env ANALYZE=1 after build",
     "storybook": "start-storybook -p 6006 -s ./",
     "build-storybook": "build-storybook"
   },
@@ -31,6 +31,7 @@
     ]
   },
   "dependencies": {
+    "@jaredpalmer/after": "latest",
     "bugsnag": "^2.0.1",
     "bugsnag-js": "^4.0.0",
     "dotenv": "^4.0.0",
@@ -44,13 +45,13 @@
     "mobx": "^3.4.1",
     "mobx-jsonapi-store": "^4.0.0",
     "mobx-react": "^4.3.3",
-    "next": "^4.2.3",
-    "next-routes": "^1.2.0",
     "path-match": "^1.2.4",
     "prop-types": "^15.6.0",
     "raf": "^3.4.0",
-    "react": "^16.0.0",
-    "react-dom": "^16.0.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-helmet": "^5.2.0",
+    "react-router-dom": "^4.2.2",
     "react-emotion": "^8.0.8",
     "unhandled-rejection": "^1.0.0"
   },

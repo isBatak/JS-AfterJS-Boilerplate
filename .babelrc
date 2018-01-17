@@ -5,14 +5,14 @@
         "transform-decorators-legacy",
         ["emotion", { "inline": true }]
       ],
-      "presets": "next/babel"
+      "presets": "@jaredpalmer/after/babel"
     },
     "production": {
       "plugins": [
         "transform-decorators-legacy",
         ["emotion", { "inline": true }]
       ],
-      "presets": "next/babel"
+      "presets": "@jaredpalmer/after/babel"
     },
     "test": {
       "plugins": [
@@ -21,7 +21,7 @@
       ],
       "presets": [
         ["env", { "modules": "commonjs" }],
-        "next/babel"
+        "@jaredpalmer/after/babel"
       ]
     }
   }
